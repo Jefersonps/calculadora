@@ -1,0 +1,30 @@
+import java.util.Scanner;
+public class calculadora {
+     public static void main(String[] args) {
+         Scanner in = new Scanner(System.in);
+     System.out.printf("Digite 1 para somar\n Digite 2 para subtrair\n Digite 3 para Multiplicar\n Digite 4 para Dividir\n");
+    int n = in.nextInt();
+    System.out.printf("Digite um numero a ser calculado:");
+    int a = in.nextInt();
+    System.out.printf("Digite outro numero a ser calculado:");
+    int b = in.nextInt();
+     switch (n){
+         case 1:
+         int r = a + b;
+      System.out.println(a+" + "+b+" = "+r);
+      break;
+      case 2:
+         r = a - b;
+      System.out.println(a+" - "+b+" = "+r);
+      break;
+      case 3:
+          r = a * b;
+      System.out.println(a+" * "+b+" = "+r);
+      break;
+      case 4:
+         r = a / b;
+      System.out.println(a+" / "+b+" = "+r);
+     break;
+     }
+    }
+}
